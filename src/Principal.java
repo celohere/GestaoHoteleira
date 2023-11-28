@@ -89,8 +89,8 @@ public class Principal {
 //        System.out.println(exemploTest.testeAlteracao(5L, "Novo texto", 30));
 //        System.out.println(exemploTest.testeExclusao());
 
-        AcomodacaoTest acomodacaoTest = new AcomodacaoTest();
-      System.out.println(acomodacaoTest.acomodacaoCadastro("Chale Lagoa", 899.00, 3, "Chale a beira da lagoa"));
+      AcomodacaoTest acomodacaoTest = new AcomodacaoTest();
+      System.out.println(acomodacaoTest.acomodacaoCadastro("Chale Lagoas", 899.00, 3, "Chale a beira da lagoa"));
 
        //System.out.println(acomodacaoTest.acomodacaoListagem());
         //System.out.println(acomodacaoTest.acomodacaoAlteracao(6L,"bh",500.00,5,""));
