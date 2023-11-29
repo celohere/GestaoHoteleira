@@ -25,11 +25,11 @@ public class Principal {
 //        System.out.println(exemploTest.testeExc
         AcomodacaoTest acomodacaoTest = new AcomodacaoTest();
 
-         System.out.println(acomodacaoTest.acomodacaoCadastro("Chalezao",5.00 , null, "Chale a beira da lagoa"));
+        // System.out.println(acomodacaoTest.acomodacaoCadastro("Chalezao",5.00 , null, "Chale a beira da lagoa"));
 
         // System.out.println(acomodacaoTest.acomodacaoListagem());
 
-        //System.out.println(acomodacaoTest.acomodacaoAlteracao(1L,"bh",500.00,5,"agora"));
+        System.out.println(acomodacaoTest.acomodacaoAlteracao(1L,"bh",500.00,5,"agora"));
 
     }
 

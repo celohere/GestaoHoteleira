@@ -50,7 +50,7 @@ public class AcomodacaoController {
             return "[ERRO] Campo nome é obrigatório. Acomodação não cadastrada!";
         }
 
-        Acomodacao acomodacao = new Acomodacao(nome, valorDiaria, limiteHospedes, descricao);
+        Acomodacao acomodacao = new Acomodacao(id, nome, valorDiaria, limiteHospedes, descricao);
         if (acomodacaoDAO.atualizar(acomodacao)) {
             return "[OK] Acomodação alterada com sucesso!";
         } else {

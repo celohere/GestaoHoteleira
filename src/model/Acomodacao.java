@@ -17,6 +17,14 @@ public class Acomodacao {
 
     public Acomodacao() {}
 
+    public Acomodacao(Long id, String nome, Double valorDiaria, Integer limiteHospedes, String descricao) {
+        this.id = id;
+        this.nome = nome;
+        this.valorDiaria = valorDiaria;
+        this.limiteHospedes = limiteHospedes;
+        this.descricao = descricao;
+    }
+
     public Acomodacao(String nome, Double valorDiaria, Integer limiteHospedes, String descricao) {
         this.nome = nome;
         this.valorDiaria = valorDiaria;
