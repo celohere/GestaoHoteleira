@@ -16,13 +16,17 @@ public class AcomodacaoController {
         if (limiteHospedes > 4)
             return "[ERRO] Excedeu limite de hóspedes";
 
+        if (descricao == null || descricao.trim().equals("")) {
+            return "[ERRO] Campo descrição obrigatório. Acomodação não cadastrada!";
+        }
+
         Acomodacao acomodacao = new Acomodacao(nome, valorDiaria, limiteHospedes, descricao);
         AcomodacaoDAO acomodacaoDAO = new AcomodacaoDAO();
 
         if (acomodacaoDAO.inserir(acomodacao)) {
             return "[OK] Acomodação cadastrada com sucesso!";
         } else {
-            return "[ERRO] Erro descon  hecido. Acomodação não cadastrada!";
+            return "[ERRO] Erro desconhecido. Acomodação não cadastrada!";
         }
     }
 
