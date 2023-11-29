@@ -1,7 +1,7 @@
-package dao.connection;
+package dao;
 
+import dao.connection.ConexaoMySQL;
 import model.Acomodacao;
-import model.Exemplo;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

@@ -1,9 +1,7 @@
 package controller;
 
-import dao.ExemploDAO;
-import dao.connection.AcomodacaoDAO;
+import dao.AcomodacaoDAO;
 import model.Acomodacao;
-import model.Exemplo;
 
 import java.util.ArrayList;
 
@@ -12,6 +10,11 @@ public class AcomodacaoController {
         if (nome == null || nome.trim().equals("")) {
             return "[ERRO] Campo nome é obrigatório. Acomodação não cadastrada!";
         }
+        if (valorDiaria <= 0.00) {
+            return "[ERRO] Valor não pode ser 0.00";
+        }
+        if (limiteHospedes > 4)
+            return "[ERRO] Excedeu limite de hóspedes";
 
         Acomodacao acomodacao = new Acomodacao(nome, valorDiaria, limiteHospedes, descricao);
         AcomodacaoDAO acomodacaoDAO = new AcomodacaoDAO();
@@ -71,8 +74,6 @@ public class AcomodacaoController {
             return "[ERRO] Erro desconhecido. Acomodacao não excluída!";
         }
     }
-
-
 
 
 }
