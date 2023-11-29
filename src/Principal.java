@@ -29,7 +29,7 @@ public class Principal {
 
         // System.out.println(acomodacaoTest.acomodacaoListagem());
 
-        System.out.println(acomodacaoTest.acomodacaoAlteracao(1L,"bh",500.00,5,"agora"));
+        System.out.println(acomodacaoTest.acomodacaoAlteracao(100L,"bh",500.00,5,"agora"));
 
     }
 

@@ -41,10 +41,10 @@ public class AcomodacaoController {
     public String alterar(Long id, String nome, Double valorDiaria, Integer limiteHospedes, String descricao) {
         AcomodacaoDAO acomodacaoDAO = new AcomodacaoDAO();
         if (id == null) {
-            return "[ERRO] ID não pode ser nulo. Acomodaçaõ não alterada!";
+            return "[ERRO] ID não pode ser nulo. Acomodação não alterada!";
         }
         if (acomodacaoDAO.selecionarPorId(id) == null) {
-            return "[ERRO] Não encontrado. Acomodação não alterada!";
+            return "[ERRO] ID não encontrado. Acomodação não alterada!";
         }
         if (nome == null || nome.trim().equals("")) {
             return "[ERRO] Campo nome é obrigatório. Acomodação não cadastrada!";
